@@ -1,0 +1,259 @@
+body{background-color: #17181e;}
+a{color: black;}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+}
+.header-logo{
+height: 60px;
+background-color: #ffffff;
+}
+.logo-user-box{
+text-align: center;
+width: 1110px;
+height: 60px;
+margin: 20px auto 0;
+}
+.logo-box{
+width: 173px;
+height: 100%;
+float: left;
+}
+.logo-box img{
+width: 100%; 
+height: 100%;
+transition-property: width,height;
+transition-duration: 0.3s;
+}
+.logo-box img:hover{
+width: 200px;
+height: 70px;
+}
+.user-box{
+width: 358px;
+height: 25px;
+float: right;
+margin-top: 25px;
+}
+.user-box a{
+padding: 0 10px;
+}
+.user-box .register{
+border-right: 1px solid #dbdbdb;
+}
+.user-box input{
+border: none;
+border-bottom: 1px solid black;
+outline: none;
+}
+.user-box img{
+width: 15px;
+height: 15px;
+}
+.user-box input::placeholder{
+    color: red;
+}
+.header-nav{
+height: 30px;
+}
+.nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:8px;
+    position: relative;
+}
+.zhiye{
+    float: left; 
+    padding: 0 8px;
+    color: blue;
+    font-size: 20px;
+}
+.zhiye::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    transform:scaleX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.zhiye:hover::after{
+    transform: scaleX(1);
+}
+.zhiye a{
+    color: blue;
+    text-decoration: none;
+}
+.zhiyetu{
+    width: 1080px;
+    height: 0px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 10%;
+    top: 50px;
+}
+.zhiye:hover .zhiyetu{
+     height: 600px;
+     transition-property: height;
+     transition-duration: 2s;
+}
+.main1{
+    height: 2128px;
+    margin-top:128px;
+}
+
+.main-haibao{
+    height: 666px;
+}
+.main-haibao img{
+    width: 100%;height: 100%;
+}
+.main-jindietotal{
+    width: 100%;
+    height: 380px;
+    display: flex;
+}
+.main-jindie{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    /* 改成怪异盒模型，解决撑大盒子的问题 */
+    box-sizing: border-box;
+    float: left;
+    margin: 0 auto;
+    align-items: center;
+}
+.main-jindieleft{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+.main-jindieright{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: red;
+    width: 10%;
+    height: 100%;
+    float: right;
+}
+.jindie-img-box{
+    width: 33.3%;
+    height: 100%;
+    background-color: peru;
+    float: left;
+}
+.jindie-img-box img{width: 100%; height: 100%;}
+.main-huanhua{
+    width: 100%;
+    height: 1070px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.huanhualeft{
+    width: 15%;
+    color: #AFEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+.huanhua-box{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.huanhua-box img{
+    width: 100%;
+    height: 100%;
+}
+.huanhuaright{
+    width: 15%;
+    color: #AFEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+.card{
+    width: 240px;
+    height: 320px;
+    background-color: pink;
+}
+.main-chouka{
+background-color:aliceblue;
+height: 300px;
+display: flex;
+}
+.main-chouka button{
+    background-color:darksalmon;
+    display: block;
+    margin-left: 20px;
+}
+.choukaanniu{
+    width: 121px;
+    height: 100%;
+}
+.choukaqu{
+    width: 100%;
+    height: 100%;
+    color: blueviolet;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-shipin{
+    width: 100%;
+    height: 600px;
+}
+.cebian{
+    width: 45px;
+    height: 150px;
+    position: fixed;
+    display: flex;
+    right: 50px;
+    bottom: 200px;
+    flex-wrap: wrap;
+}
+.cebian div img{
+    width: 45px;
+    height: 50px;
+    border: #ffffff solid 5px;
+    transition-property: width,height,border;
+    transition-duration: 0.6s;
+}
+.cebian div img:hover{
+    width: 50px;
+    height: 55px;
+    border: none;
+}
+.map{
+    width: 100%;
+    height: 570px;
+    border: red;
+}
+.map-text1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: wheat;
+    font-size: 50px;
+}
+.map1{
+    height:100%
+}
