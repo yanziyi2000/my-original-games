@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <audio id="vd" src="./audio/bgm.ogg" autoplay loop></audio>
+    <div class="contain"onselectstart="return false;" unselectable="on">
+        <div class="level-area">
+            <progress value="0" max="10" id="pro"></progress><span>LV.</span><span id="level">0</span>
+        </div>
+        <div style="display: flex;justify-content: center;color: black;font-size: larger;"onselectstart="return false;" unselectable="on">游戏名：飞翔的龙骑</div>
+        <div id="score" style="font-size: 50px; color: red;"onselectstart="return false;" unselectable="on">
+            0
+        </div>
+        <div id="start">
+            <div>
+                <div class="start_bird"></div>
+            </div>
+            <div class="but"></div>
+        </div>
+        <ul id="ul1"></ul>
+        <div id="bird" class="birddown"></div>
+        <div id="end">
+            <img src="img/gameover.jpg.png" alt="">
+            <div class="board">
+                <p class="score">0</p>
+                <p class="best">0</p>
+            </div>
+            <div class="but"></div>
+        </div>
+        <div class="help">LB</div>
+        <progress value="0" max="600" id="pro2" class="pro2"></progress>
+    </div>
+    <script src="./js/public.js"></script>
+    <script src="./js/gametest.js"></script>
+</body>

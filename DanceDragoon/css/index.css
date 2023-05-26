@@ -1,0 +1,186 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li,ul,a,input {
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+.pro2{
+    width: 100%;
+    position: fixed;
+    bottom: 24%;
+}
+.word{
+    display: none;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    font-size: 40px;
+    color: rgb(68, 9, 206);
+    /* background-color: black; */
+    border-bottom: 1px solid rgb(243, 97, 189);
+}
+.help{
+    color: rgb(234, 78, 11);
+    font-size: x-large;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 26%;
+}
+@keyframes birddown {
+    from {
+        background-image: url(../img/Dragoon2.png);
+    }
+    to {
+        background-image: url(../img/Dragoon2.png);
+    }
+}
+@keyframes birdup {
+    from {
+        background-image: url(../img/Dragoon2.png);
+    }
+    to {
+        background-image: url(../img/Dragoon2.png);
+    }
+}
+@keyframes move {
+    from {
+        transform: translateY(-2rem);
+    }
+    to {
+        transform: translateY(2rem);
+    }
+}
+@keyframes bird {
+    from {
+        background-image: url(../img/Dragoon2.png);
+    }
+    to {
+        background-image: url(../img/Dragoon2.png);
+    }
+}
+.contain {
+    width: 100%;
+    height: 568px;
+    background-image: url(../img/ff14fengjing.jpg);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.top {
+    position: absolute;
+    width: 62px;
+    top: 0;
+    background-image: url(../img/pipe_mod.png);
+}
+.top div {
+    width: 62px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/pipe.jpg);
+}
+
+.bottom {
+    position: absolute;
+    width: 62px;
+    bottom: 0;
+    background-image: url(../img/pipe_mod.png);
+}
+.bottom div {
+    width: 62px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    background-image: url(../img/pipe.jpg);
+}
+#bird {
+    position: absolute;
+    top: 100px;
+    width: 40px;
+    height: 30px;
+    background-size: 100% 100%;
+    left: 20px;
+    display: none;
+}
+.birddown {
+    animation: birddown 0.05s linear infinite;
+}
+.birdup {
+    animation: birdup 0.05s linear infinite;
+}
+#start {
+    margin-top: 5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+#start>div:nth-of-type(1) {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    animation: move 2s linear infinite alternate;
+}
+
+#start>div:nth-of-type(1) .start_bird {
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    animation: bird .5s linear infinite;
+}
+progress{
+    color: gold;
+}
+div.but {
+    overflow: hidden;
+    width: 96px;
+    height: 26px;
+
+    margin: 4rem auto;
+}
+#end {
+    text-align: center;
+    margin-top: 4rem;
+    display: none;
+    position: relative;
+    z-index: 100;
+}
+#end .board {
+    width: 269px;
+    height: 135px;
+    background-image: url(../img/th1.jpg.png);
+    margin: 0 auto;
+    position: relative;
+}
+#end .board p {
+    position: absolute;
+}
+#end .board p.score {
+    right: 40px;
+    top: 30px;
+}
+#end .board p.best {
+    right: 40px;
+    top: 100px;
+}
+#score {
+    height: 39px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    margin-top: 2rem;
+}
+.level-area{
+    display: flex;
+    justify-content: center;
+}
